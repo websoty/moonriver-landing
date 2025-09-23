@@ -18,6 +18,11 @@ $desc-color:#C2C2C2;
   font-family: 'SegoeUI';
 }
 
+@mixin FuturaPT-300 {
+  font-weight: 300;
+  font-family: 'FuturaPT-Light';
+}
+
 @mixin FuturaPT-400 {
   font-weight: 400;
   font-family: 'FuturaPT-Book';
