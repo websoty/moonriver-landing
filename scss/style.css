@@ -717,3 +717,100 @@ figure {
 .map__address iframe:hover {
   filter: brightness(1);
 }
+
+.gallery {
+  margin: 20px 0;
+}
+.gallery__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 20px;
+  grid-template-rows: 400px 400px;
+}
+
+.gallery__card.full {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EDEDED;
+}
+.gallery__card:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.gallery__card:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.gallery__card:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.gallery__card:nth-child(4) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.gallery__card:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+.gallery__card-link {
+  transition: all 0.3s ease;
+}
+.gallery__card-link:hover {
+  transform: scale(1.1);
+}
+.gallery__card-img {
+  max-width: 100%;
+}
+.gallery__card-descr {
+  padding-right: 150px;
+}
+.gallery__card-descr.ring {
+  margin-top: 67px;
+}
+.gallery__card-descr.earring {
+  margin-bottom: 67px;
+}
+.gallery__card-descr.full {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+}
+.gallery__card-descr.full:nth-child(2) {
+  color: #EFC58B;
+}
+.gallery__card-descr.full h4 {
+  color: #fff;
+}
+.gallery__card-title {
+  color: #272727;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.gallery__card-text {
+  font-weight: 300;
+  font-family: 'FuturaPT-Light';
+  color: #757575;
+  margin-bottom: 10px;
+}
+.gallery__card-price {
+  color: #E2B67A;
+  font-weight: 400;
+  font-family: 'SegoeUI';
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
