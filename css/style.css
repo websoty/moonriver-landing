@@ -1072,6 +1072,132 @@ figure {
   font-style: italic;
 }
 
+.social__slider {
+  margin-bottom: 80px;
+}
+
+.social__inner {
+  background-color: #272727;
+  padding-bottom: 100px;
+}
+
+.social__descr {
+  padding: 100px 0 80px 0;
+}
+
+.social__title {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Forum';
+  letter-spacing: 1.4px;
+}
+
+.social__title span {
+  display: block;
+}
+
+.slider__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.slider__track-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.slider__track-item:nth-child(odd) {
+  width: 308px;
+  height: 385px;
+}
+
+.slider__track-item:nth-child(even) {
+  width: 385px;
+  height: 385px;
+}
+
+.slider__track-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__nav-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottom__social-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  gap: 20px;
+}
+
+.slider__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.slider__btns-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.slider__btns-dots span {
+  display: block;
+  background-color: #656565;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider__btns-dots span:hover {
+  background-color: #fff;
+}
+
+.slider__btns-dots span:nth-child(3) {
+  background-color: #fff;
+}
+
+.slider__btns button {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider__btns button:nth-child(1):hover {
+  -webkit-transform: translateX(-7px) scale(1.1);
+          transform: translateX(-7px) scale(1.1);
+}
+
+.slider__btns button:nth-child(3):hover {
+  -webkit-transform: translateX(7px) scale(1.1);
+          transform: translateX(7px) scale(1.1);
+}
 
 .contacts__inner {
   display: -webkit-box;
@@ -1081,6 +1207,9 @@ figure {
 
 .contacts__image img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .contacts__form {
   display: -webkit-box;
