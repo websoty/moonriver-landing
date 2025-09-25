@@ -1072,6 +1072,7 @@ figure {
   font-style: italic;
 }
 
+
 .contacts__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,9 +1081,6 @@ figure {
 
 .contacts__image img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .contacts__form {
   display: -webkit-box;
