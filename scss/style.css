@@ -815,98 +815,72 @@ figure {
   font-style: italic;
 }
 
-.social__slider {
-  margin-bottom: 80px;
-  overflow: hidden;
-}
-
-.social__inner {
-  background-color: #272727;
-}
-
-.social__descr {
-  padding: 100px 0 80px 0;
-}
-
-.social__title {
-  font-size: 48px;
-  font-weight: 400;
-  font-family: 'Forum';
-  letter-spacing: 1.4px;
-}
-.social__title span {
-  display: block;
-}
-
-.slider__track {
+.contacts__inner {
   display: flex;
-  gap: 25px;
-  transform: translateX(-14%);
 }
-.slider__track-item {
-  flex: 0 0 auto;
-}
-.slider__track-item:nth-child(odd) {
-  width: 308px;
-  height: 385px;
-}
-.slider__track-item:nth-child(even) {
-  width: 385px;
-  height: 385px;
-}
-.slider__track-item img {
+.contacts__image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
-
-.slider__nav {
-  padding-bottom: 100px;
-}
-.slider__nav-inner {
+.contacts__form {
   display: flex;
-  justify-content: space-between;
-}
-
-.bottom__social-slider {
-  display: flex;
-  margin-bottom: 0;
-  gap: 20px;
-}
-
-.slider__btns {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  width: 50%;
 }
-.slider__btns-dots {
-  display: flex;
-  gap: 15px;
+.contacts__form-content.pretitle, .contacts__form-content.subscribe {
+  text-transform: uppercase;
+  color: #272727;
+  letter-spacing: 0.9px;
+  margin-bottom: 30px;
 }
-.slider__btns-dots span {
-  display: block;
-  background-color: #656565;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.contacts__form-content.phone {
+  font-weight: 300;
+  font-family: 'FuturaPT-Light';
+  color: #959595;
+  font-size: 22px;
+  margin-bottom: 110px;
 }
-.slider__btns-dots span:hover {
-  background-color: #fff;
-}
-.slider__btns-dots span:nth-child(3) {
-  background-color: #fff;
-}
-.slider__btns button {
-  cursor: pointer;
+.contacts__form-input {
+  width: 280px;
+  padding: 3px 0;
+  line-height: 1.4px;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'FuturaPT-Light';
+  color: #C2C2C2;
   background-color: transparent;
-  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  position: relative;
+  display: flex;
 }
-.slider__btns button:nth-child(1):hover {
-  transform: translateX(-7px) scale(1.1);
+.contacts__form-input::after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  background-color: #272727;
+  height: 2px;
+  bottom: 0;
+  right: 0;
 }
-.slider__btns button:nth-child(3):hover {
-  transform: translateX(7px) scale(1.1);
+.contacts__form-btn {
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.contacts__form-btn:hover {
+  transform: translateX(7px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
