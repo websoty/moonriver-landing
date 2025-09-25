@@ -817,6 +817,7 @@ figure {
 
 .social__slider {
   margin-bottom: 80px;
+  overflow: hidden;
 }
 
 .social__inner {
@@ -840,6 +841,7 @@ figure {
 .slider__track {
   display: flex;
   gap: 25px;
+  transform: translateX(-14%);
 }
 .slider__track-item {
   flex: 0 0 auto;
@@ -858,6 +860,9 @@ figure {
   object-fit: cover;
 }
 
+.slider__nav {
+  padding-bottom: 100px;
+}
 .slider__nav-inner {
   display: flex;
   justify-content: space-between;
