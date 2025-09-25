@@ -732,3 +732,78 @@ figure {
     font-style: italic;
   }
 }
+
+// contacts
+
+.contacts {
+  &__inner {
+    display: flex;
+  }
+  &__image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    &-content {
+      &.pretitle, &.subscribe {
+      text-transform: uppercase;
+      color: $accent-color;
+      letter-spacing: 0.9px;
+      margin-bottom: 30px;
+    }
+      &.phone {
+        @include FuturaPT-300;
+        color: #959595;
+        font-size: 22px;
+        margin-bottom: 110px;
+      }
+    }
+    &-input {
+      width: 280px;
+      padding: 3px 0;
+      line-height: 1.4px;
+      font-size: 22px;
+      @include FuturaPT-300;
+      color: $desc-color;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      position: relative;
+      display: flex;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 280px;
+        background-color: $accent-color;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &-btn {
+      background-color: transparent;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        transform: translateX(7px);
+      }
+    }
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
