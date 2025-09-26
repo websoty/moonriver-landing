@@ -386,10 +386,12 @@
             </li>
           </ul>
         </nav>
+        
         <div class="footer__bottom">
           <div class="footer__img">
-            <img src="images/logo-footer.svg" alt="">
+            <a href="#" class="footer__logo"><img src="images/logo-footer.svg" alt=""></a>
           </div>
+          <div class="footer__bottom-actions">
           <div class="footer__contact">
             <p class="footer__contact-text">телефон горячей линии</p>
             <a href="tel:+7800456456" class="footer__contact-link">+7 800 456 456</a>
@@ -405,22 +407,22 @@
           <div class="footer__form">
             <p class="footer__form-text">подпишитесь на новости</p>
             <form action="#">
-                <label class="footer__form-label" 
-                for="email">
-                <span class="footer__form-text">Введите E-mail</span>
-                <input class="footer__form-input" type="email" id="email" placeholder="Введите E-mail">
-                </label>
-                <button class="arrow__btn">
+                <label class="sr-only" for="email">Введите E-mail</label>
+                <div class="footer__form-input">
+                <input type="email" id="email" placeholder="Введите E-mail">
+                <button class="footer__form-btn">
                   <img src="images/arrow.svg" alt="arrow submit button">
                 </button>
+                </div>
               </form>
-                <div class="footer_apps">
+                <div class="footer__apps">
                 <a href="#" class="footer__apps-link">
                   <img src="images/appstore.svg" alt="appstore">
                 </a>
                 <a href="#" class="footer__apps-link">
                   <img src="images/googlepay.png" alt="google playmarket">
           </div>
+        </div>
         </div>
       </div>
     </div>
