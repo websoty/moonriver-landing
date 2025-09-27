@@ -733,146 +733,162 @@ figure {
   }
 }
 
-footer
-//footer
+//social section
 
-.footer {
+.social__slider {
+  margin-bottom: 80px;
+}
+.social__inner {
   background-color: $accent-color;
-  padding: 80px 0;
-  &__img {
-    max-width: 260px;
-    height: auto;
+  padding-bottom: 100px;
+}
+
+.social__descr {
+  padding: 100px 0 80px 0;
+}
+.social__title{
+  font-size: 48px;
+  @include Forum-400;
+  letter-spacing: 1.4px;
+  span {
+    display: block;
   }
-  &__bottom {
-    display: flex;
-    align-items: center;
-    &-actions {
-      display: flex;
-      margin-left: auto;
+}
+
+.slider__track {
+  display: flex;
+  gap: 25px;
+  &-item {
+    flex: 0 0 auto;
+    &:nth-child(odd) {
+      width: 308px;
+      height: 385px;
     }
-  }
-  &__apps {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    &-link {
-      transition: all 0.3s ease;
-      &:hover {
-        opacity: 0.7;
-        transform: scale(1.2);
-      }
+    &:nth-child(even) {
+      width: 385px;
+      height: 385px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
 
-.footer__nav {
-  margin-bottom: 90px;
-  &-list {
+.slider__nav {
+  &-inner {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-  }
-  &-item {
-    text-transform: uppercase;
-    font-size: 14px;
-    @include FuturaPT-500;
-    letter-spacing: 0.85px;
-  }
-  &-link {
-    position: relative;
-    display: inline-block;
-    &::after {
-      content: '';
-       position: absolute;
-       width: 0;
-       height: 1.8px;
-       background-color: #fff;
-       display: block;
-       left: 50%;
-       top: 25px;
-       transform: translate(-50%);
-       transition: all 0.3s ease;
-    }
-        &:hover::after {
-      width: 100%;
-      background-color: $gold-color;
-    }
   }
 }
-
-.footer__contact {
-  margin-right: 80px;
-  &-text {
-    font-size: 14px;
-    letter-spacing: 0.7px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-  }
-  &-link {
-    @include FuturaPT-300;
-    color: $desc-color;
-    margin-bottom: 15px;
-    display: inline-block;
-    transition: 0.3s ease;
-    &:hover {
-      color: #fff;
-      transform: scale(1.1);
-    }
-  }
+.bottom__social-slider {
+  display: flex;
+  margin-bottom: 0;
+  gap: 20px;
 }
 
-.footer__form {
-  &-text {
-    font-size: 14px;
-    letter-spacing: 0.7px;
-    margin-bottom: 15px;
-    text-transform: uppercase; 
-  }
-  &-input {
-    margin-bottom: 16px;
-    width: 280px;
-    position: relative;
-    input {
-      width: 100%;
-      padding: 10px 0;
-      @include FuturaPT-300;
-      font-size: 18px;
-      color: $desc-color;
-      outline: none;
-      background-color: transparent;
-      border: none;
-      &::placeholder {
-        color: $desc-color;
+.slider__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  &-dots {
+    display: flex;
+    gap: 15px;
+    span {
+      display: block;
+      background-color: #656565;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #fff;
+      }
+      &:nth-child(3) {
+        background-color: #fff;
       }
     }
-       &::after {
+    
+  }
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    &:nth-child(1):hover {
+      transform: translateX(-7px) scale(1.1);
+    }
+    &:nth-child(3):hover {
+      transform: translateX(7px) scale(1.1);
+    }
+  }
+}
+
+// contacts
+
+.contacts {
+  &__inner {
+    display: flex;
+  }
+  &__image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    &-content {
+      &.pretitle, &.subscribe {
+      text-transform: uppercase;
+      color: $accent-color;
+      letter-spacing: 0.9px;
+      margin-bottom: 30px;
+    }
+      &.phone {
+        @include FuturaPT-300;
+        color: #959595;
+        font-size: 22px;
+        margin-bottom: 110px;
+      }
+    }
+    &-input {
+      width: 280px;
+      padding: 3px 0;
+      line-height: 1.4px;
+      font-size: 22px;
+      @include FuturaPT-300;
+      color: $desc-color;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      position: relative;
+      display: flex;
+      &::after {
         content: '';
         position: absolute;
         width: 280px;
-        background-color: #fff;
-        height: 1px;
+        background-color: $accent-color;
+        height: 2px;
         bottom: 0;
         right: 0;
-      }    
-  }
+      }
+    }
     &-btn {
-      position: absolute;
-      bottom: 10px;
-      right: 0;
       background-color: transparent;
-      cursor: pointer;
       transition: transform 0.3s ease;
+      cursor: pointer;
       &:hover {
         transform: translateX(7px);
       }
-      img {
-        width: 28px;
-        height: 15px;
-      }
-    }  
-}  
-
-
+    }
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;

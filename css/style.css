@@ -1073,200 +1073,83 @@ figure {
 }
 
 
-.footer {
-  background-color: #272727;
-  padding: 80px 0;
-}
-
-.footer__img {
-  max-width: 260px;
-  height: auto;
-}
-
-.footer__bottom {
+.contacts__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.footer__bottom-actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.footer__apps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 7px;
-}
-
-.footer__apps-link {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.footer__apps-link:hover {
-  opacity: 0.7;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.footer__nav {
-  margin-bottom: 90px;
-}
-
-.footer__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
-}
-
-.footer__nav-item {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'FuturaPT-Medium';
-  font-weight: 500;
-  letter-spacing: 0.85px;
-}
-
-.footer__nav-link {
-  position: relative;
-  display: inline-block;
-}
-
-.footer__nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1.8px;
-  background-color: #fff;
-  display: block;
-  left: 50%;
-  top: 25px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.footer__nav-link:hover::after {
+.contacts__image img {
   width: 100%;
-  background-color: #E2B67A;
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
 
-.footer__contact {
-  margin-right: 80px;
-}
-
-.footer__contact-text {
-  font-size: 14px;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
+.contacts__form-content.pretitle, .contacts__form-content.subscribe {
   text-transform: uppercase;
+  color: #272727;
+  letter-spacing: 0.9px;
+  margin-bottom: 30px;
 }
 
-.footer__contact-link {
+.contacts__form-content.phone {
   font-weight: 300;
   font-family: 'FuturaPT-Light';
-  color: #C2C2C2;
-  margin-bottom: 15px;
-  display: inline-block;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  color: #959595;
+  font-size: 22px;
+  margin-bottom: 110px;
 }
 
-.footer__contact-link:hover {
-  color: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.footer__form-text {
-  font-size: 14px;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.footer__form-input {
-  margin-bottom: 16px;
+.contacts__form-input {
   width: 280px;
-  position: relative;
-}
-
-.footer__form-input input {
-  width: 100%;
-  padding: 10px 0;
+  padding: 3px 0;
+  line-height: 1.4px;
+  font-size: 22px;
   font-weight: 300;
   font-family: 'FuturaPT-Light';
-  font-size: 18px;
   color: #C2C2C2;
+  background-color: transparent;
   outline: none;
-  background-color: transparent;
   border: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.footer__form-input input::-webkit-input-placeholder {
-  color: #C2C2C2;
-}
-
-.footer__form-input input:-ms-input-placeholder {
-  color: #C2C2C2;
-}
-
-.footer__form-input input::-ms-input-placeholder {
-  color: #C2C2C2;
-}
-
-.footer__form-input input::placeholder {
-  color: #C2C2C2;
-}
-
-.footer__form-input::after {
+.contacts__form-input::after {
   content: '';
   position: absolute;
   width: 280px;
-  background-color: #fff;
-  height: 1px;
-=======
-
-.
-
-
-.footer__form-btn {
-  position: absolute;
-  bottom: 10px;
+  background-color: #272727;
+  height: 2px;
+  bottom: 0;
   right: 0;
+}
+
+.contacts__form-btn {
   background-color: transparent;
-  cursor: pointer;
-
-
-
-.footer__form-btn:hover {
-
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   cursor: pointer;
 }
 
-
-
-.footer__form-btn img {
-  width: 28px;
-  height: 15px;
+.contacts__form-btn:hover {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
 }
-
 
 .sr-only {
   position: absolute;
