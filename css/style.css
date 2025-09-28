@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Forum';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Forum.woff) format("woff"), url(../fonts/Forum.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'SegoeUI-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/SegoeUI-Light.woff) format("woff"), url(../fonts/SegoeUI-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/SegoeUI.woff) format("woff"), url(../fonts/SegoeUI.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/FuturaPT-Light.woff) format("woff"), url(../fonts/FuturaPT-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/FuturaPT-Book.woff) format("woff"), url(../fonts/FuturaPT-Book.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Bold';
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/FuturaPT-Bold.woff) format("woff"), url(../fonts/FuturaPT-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/FuturaPT-Medium.woff) format("woff"), url(../fonts/FuturaPT-Medium.woff2) format("woff2");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-weight: 400;
+  font-family: 'FuturaPT-Book';
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
