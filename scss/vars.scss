@@ -1,0 +1,46 @@
+$accent-color: #272727;
+$gold-color: #E2B67A;
+$desc-color:#C2C2C2;  
+
+
+@mixin Forum-400 {
+  font-weight: 400;
+  font-family: 'Forum';
+}
+
+@mixin SegoeUI-300 {
+  font-weight: 300;
+  font-family: 'SegoeUI-Light';
+}
+
+@mixin SegoeUI-400 {
+  font-weight: 400;
+  font-family: 'SegoeUI';
+}
+
+@mixin FuturaPT-300 {
+  font-weight: 300;
+  font-family: 'FuturaPT-Light';
+}
+
+@mixin FuturaPT-400 {
+  font-weight: 400;
+  font-family: 'FuturaPT-Book';
+}
+
+@mixin FuturaPT-500 {
+  font-weight: 500;
+  font-family: 'FuturaPT-Medium';
+}
+
+@mixin FuturaPT-600 {
+  font-weight: 600;
+  font-family: 'FuturaPT-Bold';
+}
+
+@mixin FuturaPT-500 {
+  font-family: 'FuturaPT-Medium';
+  font-weight: 500;
+}
+
+
