@@ -581,6 +581,7 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .map__content {
@@ -663,6 +664,103 @@
     transition: 0.3s ease;
     &:hover {
       filter: brightness(1);
+    }
+  }
+}
+
+//gallery 
+.gallery {
+  margin: 20px 0;
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &.left,
+    &.right {
+      flex: 1;
+    }
+
+    &.center {
+      flex: 2;
+    }
+  }
+
+  &__card {
+    position: relative;
+    flex: 1;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    &-title {
+      color: $accent-color;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    &-text {
+      @include FuturaPT-300;
+      color: #757575;
+    }
+    &-price {
+      @include SegoeUI-400;
+      color: $gold-color;
+      font-style: italic;
+      letter-spacing: 0.4px;
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      flex: 1;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    &-imgL,
+    &-imgR {
+      max-width: 260px;
+      margin:80px auto 0;
+      display: block;
+    }
+
+    &-descr {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      color: #fff;
+      h4,
+      p {
+        margin: 0 0 10px 0;
+      }
+      &.full {
+        h4 {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .gallery__card-text {
+          color: #e7e7e7;
+          @include FuturaPT-300;
+          opacity: 0.8;
+        }
+        .gallery__card-price {
+          color: #EFC58B;
+          @include SegoeUI-400;
+          letter-spacing: 0.5px;
+        }
+      }
     }
   }
 }
