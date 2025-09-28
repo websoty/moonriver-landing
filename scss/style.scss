@@ -503,3 +503,72 @@
     text-align: right;
   }
 }
+
+//choice 
+
+.choice {
+  margin: 20px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__card {
+    position: relative;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: auto;
+      filter: brightness(70%) opacity(0.95);
+      transition: filter 0.3s ease;
+    }
+    &:hover img {
+      filter: brightness(100%) opacity(1);
+    }
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+    &-text {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 37%;
+      @include FuturaPT-300;
+      font-size: 24px;
+      opacity: 0.8;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 130px;
+      height: 1px;
+      background-color: #fff;
+      transform: translateX(-50%);
+      left: 50%;
+      opacity: 0.8;
+      top: calc(100% + 30px);
+    }
+  }
+  &__title {
+    @include Forum-400;
+    font-size: 64px;
+    letter-spacing: 1.9px;
+  }
+}
