@@ -419,3 +419,87 @@
   }
  }
 }
+
+//hero block
+
+
+.hero {
+  padding-bottom: 60px;
+  width: 100%;
+  min-height: 95vh;
+  background: linear-gradient(to right, #fff 60%, $accent-color 40%);
+  background-repeat: no-repeat;
+  position: relative;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 95vh;
+    gap: 5px;
+  }
+  &__text {
+    display: flex; 
+    margin-left: 150px;
+    gap: 50px;
+  }
+  &__link {
+    display: flex;
+    align-self: flex-end;
+    gap: 35px; 
+    color: $accent-color;
+    @include SegoeUI-300;
+    font-style: italic;
+    letter-spacing: .80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &::before {
+      content: '';
+      flex-shrink: 0; 
+      width: 130px;  
+      height: 1px;
+      background-color: $accent-color;
+      transform: translateY(12px);
+    }
+  }
+  &__ring {
+    img {
+      max-width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+}
+
+.hero__descr {
+  &-ring {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    
+  }
+  &-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .67px;
+    @include FuturaPT-300;
+    display: flex;
+  }
+  &-text {
+    @include FuturaPT-300;
+    font-size: 18px;
+    color: $desc-color;
+    white-space: nowrap;
+    overflow-wrap: anywhere;
+  }
+  &-price {
+    color: #EFC58B;
+    @include SegoeUI-300;
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+  }
+}
