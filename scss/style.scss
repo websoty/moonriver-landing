@@ -875,6 +875,38 @@
   }
 }
 
+//map adaptive
+
+@media (max-width: 1024px) {
+  .map__address {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .map__location {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .map__address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0;
+  }
+  .map__content {
+    &-text {
+      h3 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+
 //gallery 
 .gallery {
   margin: 20px 0;
