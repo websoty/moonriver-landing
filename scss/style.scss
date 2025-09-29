@@ -612,6 +612,57 @@
   }
 }
 
+//hero adaptive
+
+@media (max-width: 1024px) {
+  .hero {
+    background: linear-gradient(120deg, #fff 60%, $accent-color 40%);
+    &__content {
+      justify-content: flex-end;
+      position: relative;
+    }
+    &__text {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    }
+    &__link {
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    &::before {
+      background-color: $desc-color;
+    }
+    }
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__text {
+      position: absolute;
+      right: 50px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__descr {
+    &-link {
+      font-size: 14px;
+    }
+    &-text,
+    &-price {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .hero__text {
+    right: 0;
+  }
+}
+
+
 //choice 
 
 .choice {
