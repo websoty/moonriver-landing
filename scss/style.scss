@@ -1004,6 +1004,54 @@
   }
 }
 
+// gallery adaptive
+@media (max-width: 1240px) {
+  .gallery {
+    &__card-imgL,
+    &__card-imgR {
+      margin: 25px auto 0;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .gallery {
+    &__inner {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    &__col {
+      flex: 1 1 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__card-imgL,
+    &__card-imgR {
+      margin: 70px auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    &__inner {
+      gap: 5px;
+    }
+    &__card {
+      &-descr {
+      position: static;
+      margin-top: 10px;
+      text-align: center;
+      &.full {
+        position: absolute;
+        text-align: left;
+      }
+      }
+    }
+  }
+}
+
 //social section
 
 .social__slider {
