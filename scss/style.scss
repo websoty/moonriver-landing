@@ -439,6 +439,95 @@
  }
 }
 
+// adaptive nav show
+
+@media (max-width: 1024px) {
+  .nav__head {
+    &-list {
+      gap: 20px;
+    }
+    &-btn.menu span {
+      height: 2px;
+    }
+  }
+  .nav__categories {
+    &-list{
+    justify-content: space-between;
+    }
+    &-title {
+      text-wrap: nowrap;
+    }
+  }
+  .nav__menu {
+    &-list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0 30px;
+    }
+      &-link.used::after {
+        top: 35px;
+      }
+    }
+     .bottom {
+      &__box {
+        display: none;
+      }
+      &__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+  } 
+}
+
+  @media (max-width: 768px) {
+    .nav__categories {
+      &-list {
+        gap: 55px;
+      }
+    }
+    .bottom {
+      &__block {
+        position: relative;
+      }
+      &__social {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+      }
+      &__form-input {
+        width: 280px;
+      }
+    }
+  }
+
+@media (max-width: 600px) {
+  .nav__head {
+    &-inner {
+      flex-direction: column;
+    }
+    &-tips {
+      margin-top: 25px;
+    }
+  }
+  .nav__menu-list {
+    flex-direction: column;
+  }
+
+  .nav__categories-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .bottom__block {
+    flex-wrap: wrap;
+  }
+  .bottom__social {
+    position: relative;
+  }
+}
+
+
+
 //hero block
 
 
