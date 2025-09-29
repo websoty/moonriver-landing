@@ -53,6 +53,25 @@
   margin-left: 80px;
 }
 
+// header-adaptive
+@media (max-width:1024px) {
+  .header__btn img,
+  .header__btn.menu span {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  }
+}
+@media (max-width:600px) {
+  .header__inner {
+    flex-direction: column;
+  }
+  .header__btn.menu span {
+    height: 2px;
+  }
+  .logo {
+    margin-bottom: 25px;
+  }
+}
+
 .nav__show {
   background-color: $accent-color;
   position: absolute;   
