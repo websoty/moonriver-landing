@@ -1282,6 +1282,33 @@
  }
 }
 
+//adaptive contacts
+
+@media (max-width: 1024px) {
+  .contacts {
+    &__image {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__inner {
+      flex-direction: column;
+    }
+      &__image {
+        display: none;
+      }
+      &__form {
+        margin: 30px 0;
+        width: 100%;
+      }
+    }
+ 
+  }
+
+
 //footer
 
 .footer {
