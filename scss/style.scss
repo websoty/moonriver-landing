@@ -54,6 +54,13 @@
 }
 
 // header-adaptive
+
+@media (min-width:1440px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
 @media (max-width:1024px) {
   .header__btn img,
   .header__btn.menu span {
@@ -614,6 +621,15 @@
 
 //hero adaptive
 
+@media (min-width: 1440px) {
+  .hero {
+    &__text {
+      margin: 0 auto;
+      gap: 200px;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .hero {
     background: linear-gradient(120deg, #fff 60%, $accent-color 40%);
@@ -732,6 +748,21 @@
 }
 
 //choice adaptive
+
+@media (min-width: 1440px) {
+  .choice {
+    &__inner {
+      gap: 10px;
+    }
+    &__card {
+      flex: 1;
+      max-width: 100%;
+    }
+    &__card img {
+      width: 100%;
+    }
+  }
+}
 
 @media (max-width: 1024px) {
   .choice {
@@ -1152,6 +1183,12 @@
 
 // social-slider adaptive
 
+@media (min-width: 1440px) {
+  .slider__track {
+    transform: translateX(3%);
+  }
+}
+
 @media (max-width: 1024px) {
   .slider__nav-inner {
     justify-content: space-around;
@@ -1283,6 +1320,12 @@
 }
 
 //adaptive contacts
+
+@media (min-width: 1440px) {
+  .contacts__image {
+    width: 50%;
+  }
+}
 
 @media (max-width: 1024px) {
   .contacts {
