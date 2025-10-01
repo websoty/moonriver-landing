@@ -1111,6 +1111,7 @@
   display: flex;
   gap: 25px;
   transform: translateX(-15%);
+  transition: all 0.5s ease;
   &-item {
     flex: 0 0 auto;
     &:nth-child(odd) {
@@ -1192,11 +1193,6 @@
 @media (max-width: 1024px) {
   .slider__nav-inner {
     justify-content: space-around;
-  }
-  .slider__btns {
-    button {
-      display: none;
-    }
   }
 }
 

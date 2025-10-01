@@ -1455,6 +1455,8 @@ body {
   gap: 25px;
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .slider__track-item {
@@ -1564,9 +1566,6 @@ body {
   .slider__nav-inner {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .slider__btns button {
-    display: none;
   }
 }
 
