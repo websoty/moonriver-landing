@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Forum';
   font-weight: 400;
@@ -2003,5 +2004,67 @@ body {
   .bottom__social {
     position: static;
   }
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 6px 10px;
+  -webkit-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* затемнение */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-content p {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.modal-close {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #555;
 }
 /*# sourceMappingURL=style.css.map */
