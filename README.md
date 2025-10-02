@@ -1,5 +1,7 @@
 # Одностраничный лендинг с адаптивной версткой и интерактивными элементами
 Минималистичный адаптивный лендинг, созданный для демонстрации навыков верстки и работы с DOM.
+##  Демо-сайт
+Посмотреть проект можно по адресу: [https://websoty.github.io/moonriver-landing/](https://websoty.github.io/moonriver-landing/)
 
 ## Макет Figma
 [Открыть макет в Figma](https://www.figma.com/design/h8noBnTMtXKEm5Prwm59UN/Moon-River?node-id=0-1&p=f&t=NQMtbfQoN5OmD3u8-0)
